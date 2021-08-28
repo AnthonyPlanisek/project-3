@@ -14,7 +14,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "autoprefixer": "^9.8.6",
+    "concurrently": "^5.1.0",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.8"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/AnthonyPlanisek/project-3/issues"
   },
-  "homepage": "https://github.com/AnthonyPlanisek/project-3#readme"
+  "homepage": "https://github.com/AnthonyPlanisek/project-3#readme",
+  "dependencies": {
+    "@craco/craco": "^6.2.0"
+  }
 }
