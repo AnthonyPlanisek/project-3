@@ -1,19 +1,20 @@
 import React from 'react';
-// import { useQuery } from '@apollo/client';
-
-// import ThoughtList from '../components/ThoughtList';
-// import ThoughtForm from '../components/ThoughtForm';
-
-// import { QUERY_THOUGHTS } from '../utils/queries';
+import { useQuery } from '@apollo/client';
+import UserList from '../components/UserList';
+import { QUERY_USER } from '../utils/queries';
 
 const Home = () => {
-  // const { loading, data } = useQuery(QUERY_THOUGHTS);
-  // const thoughts = data?.thoughts || [];
+  const { data } = useQuery(QUERY_USER);
+  const users = data?.users || [];
 
   return (
     <main>
       <div className="flex-row justify-center">
         new home page
+        <UserList
+        users={users}
+        title="list of users"
+        />
       </div>
     </main>
   );
