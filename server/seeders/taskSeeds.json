@@ -1,0 +1,38 @@
+[
+    {
+        "taskName": "Drink Water",
+        "taskPoint": "1",
+        "taskDescription": "Drink one 8oz cup of water!",
+        "taskDate": "2021-08-28"
+    },
+    {
+        "taskName": "Walk",
+        "taskPoint": "3",
+        "taskDescription": "Go for a 15 minute walk!",
+        "taskDate": "2021-08-28"
+    },
+    {
+        "taskName": "Take a Shower!",
+        "taskPoint": "1",
+        "taskDescription": "Take a shower! Wash EVERYWHERE this time!",
+        "taskDate": "2021-08-28"
+    },
+    {
+        "taskName": "Brush Your Teeth!",
+        "taskPoint": "1",
+        "taskDescription": "Brush your teeth, try and aim for at least 2 minutes",
+        "taskDate": "2021-08-28"
+    },
+    {
+        "taskName": "Wash/Dry Laundry",
+        "taskPoint": "1",
+        "taskDescription": "Throw in a load. Don't worry about folding yet. You'll get points for that later!",
+        "taskDate": "2021-08-28"
+    },
+    {
+        "taskName": "Fold Laundry",
+        "taskPoint": "2",
+        "taskDescription": "Time to fold that shit! It's brutal, but you got this!",
+        "taskDate": "2021-08-28"
+    }
+]
