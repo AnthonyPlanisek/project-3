@@ -7,7 +7,8 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
+import NavBar from './components/NavBar';
+import HeroText from './components/HeroText'
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 const httpLink = createHttpLink({
@@ -38,6 +39,8 @@ function App() {
     <Router>
     <div className="App">
       <Route exact path="/">
+        <NavBar />
+        <HeroText />
         <Home />
       </Route>
       <Route exact path="/signup">
