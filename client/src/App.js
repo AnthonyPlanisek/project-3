@@ -41,7 +41,7 @@ function App() {
       <Route exact path="/">
         <NavBar />
         <HeroText />
-        <Home />
+        {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
         <Signup />
