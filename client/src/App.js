@@ -9,6 +9,8 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage'
 import NavBar from './components/NavBar';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 import HeroText from './components/HeroText'
 import Progress from './components/progress';
 import Signup from './pages/Signup';
@@ -43,13 +45,13 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
-<<<<<<< HEAD
+        {/* <TodoForm /> */}
+        <TodoList />
         <HeroText />
       <Progress />
-=======
+
         <LandingPage />
         {/* <Home /> */}
->>>>>>> e14b8b6 (created productivity page with basic columns and footer)
       </Route>
       <Route exact path="/signup">
       <NavBar />
