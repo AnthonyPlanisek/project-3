@@ -1,3 +1,3 @@
 const User = require('./User');
-
-module.exports = { User };
+const Task = require('./Task')
+module.exports = { User, Task };
