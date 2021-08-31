@@ -8,6 +8,8 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 import HeroText from './components/HeroText'
 import Home from './pages/Home';
 import Signup from './pages/Signup';
@@ -40,6 +42,8 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
+        {/* <TodoForm /> */}
+        <TodoList />
         <HeroText />
         {/* <Home /> */}
       </Route>
