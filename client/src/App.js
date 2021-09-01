@@ -50,9 +50,9 @@ function App() {
         <NavBar />
         <LandingPage />
         {/* <TodoForm /> */}
-        <TodoList />
+        
         <HeroText />
-        <Graphs />
+        {/* <Graphs /> */}
         {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
@@ -63,6 +63,7 @@ function App() {
       <Route exact path="/productivity">
       <NavBar />
         <Productivity />
+        {/* <TodoList /> */}
         <Footer />
       </Route>
       
