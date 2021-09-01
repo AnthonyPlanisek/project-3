@@ -15,8 +15,12 @@ import TodoList from './components/TodoList';
 import HeroText from './components/HeroText'
 import Progress from './components/progress';
 import Signup from './pages/Signup';
+<<<<<<< HEAD
 import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
+=======
+import Graphs from './components/Graphs';
+>>>>>>> 63884c8 (charts up babbbyyyy)
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -42,6 +46,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      
     <Router>
     <div className="App">
       <Route exact path="/">
@@ -49,23 +54,36 @@ function App() {
         {/* <TodoForm /> */}
         <TodoList />
         <HeroText />
+<<<<<<< HEAD
       <Progress />
 
         <LandingPage />
+=======
+        <Graphs /> 
+        
+>>>>>>> 63884c8 (charts up babbbyyyy)
         {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
       <NavBar />
         <Signup />
+      
       </Route>
+<<<<<<< HEAD
       <Route exact path="/productivity">
       <NavBar />
         <Productivity />
         <Footer />
       </Route>
+=======
+      
+>>>>>>> 63884c8 (charts up babbbyyyy)
     </div>
+   
     </Router>
+   
     </ApolloProvider>
+    
   );
 }
 
