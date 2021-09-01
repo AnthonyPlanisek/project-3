@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 import {
   ApolloClient,
   InMemoryCache,
@@ -9,11 +10,14 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage'
 import NavBar from './components/NavBar';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 import HeroText from './components/HeroText'
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
+import Graphs from './components/Graphs';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -39,11 +43,20 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      
     <Router>
     <div className="App">
       <Route exact path="/">
         <NavBar />
+
         <LandingPage />
+
+        {/* <TodoForm /> */}
+        <TodoList />
+        <HeroText />
+        <Graphs /> 
+        
+
         {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
@@ -56,8 +69,11 @@ function App() {
         <Footer />
       </Route>
     </div>
+   
     </Router>
+   
     </ApolloProvider>
+    
   );
 }
 
