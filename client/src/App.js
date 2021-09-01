@@ -58,7 +58,6 @@ function App() {
       <Route exact path="/signup">
       <NavBar />
         <Signup />
-      
       </Route>
       <Route exact path="/productivity">
       <NavBar />
