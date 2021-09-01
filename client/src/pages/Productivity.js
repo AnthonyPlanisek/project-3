@@ -7,8 +7,11 @@ const Productivity= () => {
     return (
       <main>
         <div className="grid grid-cols-4">
+          
           <ProductColumn />
+         
           <ProductColumn />
+          
           <ProductColumn />
         </div>
       </main>

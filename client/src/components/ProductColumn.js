@@ -1,28 +1,13 @@
 import React from "react";
-
+import ToDoList from "./TodoList"
 
 export default function ProductColumn() {
   return (
     <div className="m-8 min-h-500 bg-primary" >
    
     <div>
-     <ol>
-         <li>
-             one
-         </li>
-         <li>
-             two
-         </li>
-         <li>
-             three
-         </li>
-         <li>
-             four
-         </li>
-         <li>
-           five
-         </li>
-     </ol>
+      
+     <ToDoList />
     </div>
   </div>
   

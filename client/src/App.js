@@ -47,23 +47,21 @@ function App() {
       <Route exact path="/">
         <NavBar />
         {/* <TodoForm /> */}
-        <TodoList />
-        <HeroText />
-        <Graphs /> 
         
-        {/* <Home /> */}
-        {/* <NavBar />
-        <HeroText /> */}
-        <Home />
-        <NavBar />
         <HeroText />
-        <Graphs />
+        {/* <Graphs /> */}
         {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
       <NavBar />
         <Signup />
       
+      </Route>
+      <Route exact path="/productivity">
+      <NavBar />
+        <Productivity />
+        {/* <TodoList /> */}
+        <Footer />
       </Route>
       
     </div>
