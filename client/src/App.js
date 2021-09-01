@@ -52,8 +52,7 @@ function App() {
         {/* <TodoForm /> */}
         <TodoList />
         <HeroText />
-        <Graphs /> 
-        
+        <Graphs />
         {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
