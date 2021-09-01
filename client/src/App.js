@@ -11,6 +11,7 @@ import NavBar from './components/NavBar';
 import HeroText from './components/HeroText'
 import Home from './pages/Home';
 import Signup from './pages/Signup';
+import Graphs from './components/Graphs';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -36,6 +37,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      
     <Router>
     <div className="App">
       <Route exact path="/">
@@ -45,10 +47,15 @@ function App() {
       </Route>
       <Route exact path="/signup">
         <Signup />
+      
       </Route>
+      
     </div>
+   
     </Router>
+   
     </ApolloProvider>
+    
   );
 }
 
