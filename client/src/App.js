@@ -8,12 +8,15 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage'
 import NavBar from './components/NavBar';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import HeroText from './components/HeroText'
 import Home from './pages/Home';
 import Signup from './pages/Signup';
+import Productivity from './pages/Productivity';
+import Footer from './components/Footer';
 import Graphs from './components/Graphs';
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -45,15 +48,22 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
+        <LandingPage />
         {/* <TodoForm /> */}
-        <TodoList />
+        
         <HeroText />
-        <Graphs />
+        {/* <Graphs /> */}
         {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
+      <NavBar />
         <Signup />
-      
+      </Route>
+      <Route exact path="/productivity">
+      <NavBar />
+        <Productivity />
+        {/* <TodoList /> */}
+        <Footer />
       </Route>
       
     </div>
