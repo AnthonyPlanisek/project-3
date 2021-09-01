@@ -50,6 +50,7 @@ function App() {
     <Router>
     <div className="App">
       <Route exact path="/">
+<<<<<<< HEAD
         <NavBar />
         {/* <TodoForm /> */}
         <TodoList />
@@ -63,6 +64,11 @@ function App() {
         
 >>>>>>> 63884c8 (charts up babbbyyyy)
         {/* <Home /> */}
+=======
+        {/* <NavBar />
+        <HeroText /> */}
+        <Home />
+>>>>>>> eff8a25 (user changes)
       </Route>
       <Route exact path="/signup">
       <NavBar />
