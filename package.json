@@ -30,5 +30,7 @@
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "react-icons": "^4.2.0"
+    "chart.js": "^3.5.1"
+
   }
 }
