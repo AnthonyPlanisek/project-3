@@ -28,6 +28,12 @@
   },
   "homepage": "https://github.com/AnthonyPlanisek/project-3#readme",
   "dependencies": {
-    "@craco/craco": "^6.2.0"
+    "@craco/craco": "^6.2.0",
+    "@ramonak/react-progress-bar": "^3.2.1",
+    "bootstrap": "^5.1.0",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-circular-progressbar": "^2.0.4",
+    "react-customizable-progressbar": "^1.0.3",
+    "react-native": "^0.65.1"
   }
 }
