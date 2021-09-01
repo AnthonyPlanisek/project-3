@@ -36,7 +36,7 @@ class Graphs extends Component{
     render(){
         return(
             <div className="chart">
-                <Bar 
+                <Line 
                 data={this.state.chartData}
                
                 options={{
