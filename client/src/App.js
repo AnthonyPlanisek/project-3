@@ -49,8 +49,12 @@ function App() {
         {/* <TodoForm /> */}
         
         <HeroText />
+<<<<<<< HEAD
         {/* <Graphs /> */}
         {/* <Home /> */}
+=======
+      <Progress />
+>>>>>>> 406b618 (working progress bar)
       </Route>
       <Route exact path="/signup">
       <NavBar />
