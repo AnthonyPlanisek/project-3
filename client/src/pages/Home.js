@@ -7,13 +7,20 @@ const Home = () => {
   const { data } = useQuery(QUERY_USERS);
   const users = data?.users || [];
   console.log('!!!!', users)
+  // const username = users[0].username
   console.log('????', JSON.stringify(users[0]))
+  let allUsers = []
+  for (let i = 0; i < users.length; i++) {
+    allUsers.push(users[i].username + ' ')
+    
+  }
+
   return (
     <main>
       <div className="flex-row justify-center">
-        new home page: 
+        user page: 
         <ol>
-        <li>{JSON.stringify(users[0])}</li>
+        <li>{allUsers}</li>
         </ol>
       </div>
     </main>

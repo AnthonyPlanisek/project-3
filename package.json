@@ -28,6 +28,9 @@
   },
   "homepage": "https://github.com/AnthonyPlanisek/project-3#readme",
   "dependencies": {
-    "@craco/craco": "^6.2.0"
+    "@craco/craco": "^6.2.0",
+    "react-icons": "^4.2.0"
+    "chart.js": "^3.5.1"
+
   }
 }
