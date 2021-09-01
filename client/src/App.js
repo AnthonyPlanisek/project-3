@@ -39,9 +39,9 @@ function App() {
     <Router>
     <div className="App">
       <Route exact path="/">
-        <NavBar />
-        <HeroText />
-        {/* <Home /> */}
+        {/* <NavBar />
+        <HeroText /> */}
+        <Home />
       </Route>
       <Route exact path="/signup">
         <Signup />
