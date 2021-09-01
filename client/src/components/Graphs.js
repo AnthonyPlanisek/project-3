@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { Bar, Line, Pie } from "react-chartjs-2";
-
-
+// import { useQuery } from '@apollo/client';
+// import { QUERY_USERS } from '../utils/queries';
+// const { data } = useQuery(QUERY_USERS);
+// const users = data?.users || [];
+// console.log('!!!!', users)
 class Graphs extends Component{
+    
     constructor(props){
         super(props);
         this.state = {
