@@ -15,12 +15,7 @@ import TodoList from './components/TodoList';
 import HeroText from './components/HeroText'
 import Progress from './components/progress';
 import Signup from './pages/Signup';
-<<<<<<< HEAD
-import Productivity from './pages/Productivity';
-import Footer from './components/Footer';
-=======
 import Graphs from './components/Graphs';
->>>>>>> 63884c8 (charts up babbbyyyy)
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -50,40 +45,27 @@ function App() {
     <Router>
     <div className="App">
       <Route exact path="/">
-<<<<<<< HEAD
         <NavBar />
         {/* <TodoForm /> */}
         <TodoList />
         <HeroText />
-<<<<<<< HEAD
-      <Progress />
-
-        <LandingPage />
-=======
         <Graphs /> 
         
->>>>>>> 63884c8 (charts up babbbyyyy)
         {/* <Home /> */}
-=======
         {/* <NavBar />
         <HeroText /> */}
         <Home />
->>>>>>> eff8a25 (user changes)
+        <NavBar />
+        <HeroText />
+        <Graphs />
+        {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
       <NavBar />
         <Signup />
       
       </Route>
-<<<<<<< HEAD
-      <Route exact path="/productivity">
-      <NavBar />
-        <Productivity />
-        <Footer />
-      </Route>
-=======
       
->>>>>>> 63884c8 (charts up babbbyyyy)
     </div>
    
     </Router>
