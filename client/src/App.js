@@ -51,7 +51,7 @@ function App() {
         {/* <NavBar />
         <LandingPage /> */}
         {/* <TodoForm /> */}
-        <CircularProgressbar value={35}/>
+        {/* <CircularProgressbar value={35}/> */}
         
         {/* <HeroText /> */}
         {/* <Graphs /> */}
