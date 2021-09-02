@@ -47,13 +47,13 @@ function App() {
     <Router>
     <div className="App">
       <Route exact path="/">
-        <NavBar />
-        <LandingPage />
+        {/* <NavBar />
+        <LandingPage /> */}
         {/* <TodoForm /> */}
         
-        <HeroText />
+        {/* <HeroText /> */}
         {/* <Graphs /> */}
-        {/* <Home /> */}
+        <Home />
       </Route>
       <Route exact path="/signup">
       <NavBar />
