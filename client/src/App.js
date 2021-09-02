@@ -47,14 +47,10 @@ function App() {
       <Route exact path="/">
         <NavBar />
         {/* <TodoForm /> */}
-        
         <HeroText />
-<<<<<<< HEAD
         {/* <Graphs /> */}
         {/* <Home /> */}
-=======
       <Progress />
->>>>>>> 406b618 (working progress bar)
       </Route>
       <Route exact path="/signup">
       <NavBar />
@@ -63,9 +59,6 @@ function App() {
       </Route>
       <Route exact path="/productivity">
       <NavBar />
-        <Productivity />
-        {/* <TodoList /> */}
-        <Footer />
       </Route>
       
     </div>

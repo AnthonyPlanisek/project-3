@@ -1,12 +1,8 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
-<<<<<<< HEAD
-const bcrypt = require('bcrypt');
-=======
 
 const bcrypt = require('bcrypt');
 
->>>>>>> 18b3c59 (seeder working)
 const userSchema = new Schema({
     username: {
         type: String,
