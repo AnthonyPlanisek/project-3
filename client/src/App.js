@@ -48,14 +48,14 @@ function App() {
     <Router>
     <div className="App">
       <Route exact path="/">
-        <NavBar />
-        <LandingPage />
+        {/* <NavBar />
+        <LandingPage /> */}
         {/* <TodoForm /> */}
         <CircularProgressbar value={35}/>
         
-        <HeroText />
+        {/* <HeroText /> */}
         {/* <Graphs /> */}
-        {/* <Home /> */}
+        <Home />
       </Route>
       <Route exact path="/signup">
       <NavBar />
