@@ -18,6 +18,7 @@ import Signup from './pages/Signup';
 import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
 import Graphs from './components/Graphs';
+import CircularProgressbar from './components/progress';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -50,6 +51,7 @@ function App() {
         {/* <NavBar />
         <LandingPage /> */}
         {/* <TodoForm /> */}
+        <CircularProgressbar value={35}/>
         
         {/* <HeroText /> */}
         {/* <Graphs /> */}
