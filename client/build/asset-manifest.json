@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7e362f0.chunk.css",
+    "main.js": "/static/js/main.b557c803.chunk.js",
+    "main.js.map": "/static/js/main.b557c803.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a9f80a17.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a9f80a17.js.map",
+    "static/js/2.fd4e7787.chunk.js": "/static/js/2.fd4e7787.chunk.js",
+    "static/js/2.fd4e7787.chunk.js.map": "/static/js/2.fd4e7787.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b7e362f0.chunk.css.map": "/static/css/main.b7e362f0.chunk.css.map",
+    "static/js/2.fd4e7787.chunk.js.LICENSE.txt": "/static/js/2.fd4e7787.chunk.js.LICENSE.txt",
+    "static/media/navpattern.f0c799c9.svg": "/static/media/navpattern.f0c799c9.svg",
+    "static/media/plantrlogo.b408a565.svg": "/static/media/plantrlogo.b408a565.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9f80a17.js",
+    "static/js/2.fd4e7787.chunk.js",
+    "static/css/main.b7e362f0.chunk.css",
+    "static/js/main.b557c803.chunk.js"
+  ]
+}
