@@ -35,6 +35,8 @@
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.4",
     "react-circular-progressbar": "^2.0.4",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "react-modal": "^3.14.3",
+    "react-transition-group": "^4.4.2"
   }
 }

@@ -23,10 +23,11 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
 
     return todos.map((todo, index) => (
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-            <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-                {todo.text}
-            </div>
-            <div classname='icons'>
+        <div key={todo.id} onClick={e => {
+            this.showModal(e)}}
+            ></div>
+            {todo.text}
+            <div className='icons'>
                 <RiCloseCircleLine
                 onClick={() => removeTodo(todo.id)}
                 className='delete-icon'
@@ -39,5 +40,6 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
         </div>
     ))
 }
+
 
 export default ToDo

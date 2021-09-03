@@ -18,6 +18,8 @@ import Signup from './pages/Signup';
 import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
 import Graphs from './components/Graphs';
+import ReactModal from './components/modal';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -48,9 +50,9 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
-        <LandingPage />
-        <TodoForm />        
-        <HeroText />
+        {/* <LandingPage /> */}
+        {/* <TodoForm />         */}
+        {/* <HeroText /> */}
         {/* <Graphs /> */}
         <Home />
       </Route>
@@ -60,11 +62,11 @@ function App() {
       </Route>
       <Route exact path="/productivity">
       <NavBar />
+        <ReactModal />
         <Productivity />
-        <TodoList />
+        {/* <TodoList /> */}
         <Footer />
       </Route>
-      
     </div>
    
     </Router>
