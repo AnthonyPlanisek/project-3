@@ -3,7 +3,7 @@ import ToDoList from "./TodoList"
 
 export default function ProductColumn() {
   return (
-    <div className="m-8 min-h-500 bg-primary" >
+    <div className="mr-8 ml-8 bg-primary" >
    
     <div>
       

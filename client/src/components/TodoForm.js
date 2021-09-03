@@ -50,7 +50,7 @@ const handleSubmit = e => {
             onChange={handleChange}
             ref={inputRef}
             />
-            <button className="todo-button">Add todo</button>
+            <button className="todo-button bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"> Add todo</button>
             </>
             )
         }
