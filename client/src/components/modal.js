@@ -2,7 +2,7 @@ import React from 'react';
 import ReactModal from 'react-modal'
 import ReactDOM from 'react-dom'
 
-ReactModal.setAppElement('.app');
+ReactModal.setAppElement('#root');
 
 class ExampleApp extends React.Component {
   constructor () {
@@ -39,8 +39,7 @@ class ExampleApp extends React.Component {
   }
 }
 
-const props = {};
+ReactModal.setAppElement(document.getElementById('root'));
 
-ReactDOM.render(<ExampleApp {...props} />, document.getElementById('app'))
 
 export default ReactModal
