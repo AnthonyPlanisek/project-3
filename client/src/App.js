@@ -43,18 +43,18 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      
+{/*       
     <Router>
     <div className="App">
       <Route exact path="/">
         <NavBar />
-        <LandingPage />
+        <LandingPage /> */}
         {/* <TodoForm /> */}
         
-        <HeroText />
-        {/* <Graphs /> */}
+        {/* <HeroText /> */}
+        <Graphs />
         {/* <Home /> */}
-      </Route>
+      {/* </Route>
       <Route exact path="/signup">
       <NavBar />
         <Signup />
@@ -63,12 +63,12 @@ function App() {
       <NavBar />
         <Productivity />
         {/* <TodoList /> */}
-        <Footer />
-      </Route>
-      
-    </div>
+        {/* <Footer />
+      </Route> */}
+       
+    {/* </div>
    
-    </Router>
+    </Router> */}
    
     </ApolloProvider>
     

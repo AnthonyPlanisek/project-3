@@ -1,27 +1,17 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { useMutation, useQuery } from '@apollo/client';
+import { QUERY_TASKS } from '../utils/queries'
 
 import { Line } from "react-chartjs-2";
 
-const data = {
-  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-  datasets: [
-    {
-      label: "First dataset",
-      data: [33, 53, 85, 41, 44, 65],
-      fill: true,
-      backgroundColor: "rgba(75,192,192,0.2)",
-      borderColor: "rgba(75,192,192,1)"
-    },
-    {
-      label: "Second dataset",
-      data: [33, 25, 35, 51, 54, 76],
-      fill: false,
-      borderColor: "#742774"
-    }
-  ]
-};
 
+
+export default function Graphs() {
+  const {data} = useQuery(QUERY_TASKS);
+  console.log('data',data)
+const Task = data?.Task || [];
+console.log('Task',Task)
+console.log('???', JSON.stringify(Task[0]))
 const legend = {
   display: true,
   position: "bottom",
@@ -30,7 +20,6 @@ const legend = {
     fontSize: 14
   }
 };
-
 const options = {
   title: {
     display: true,
@@ -46,12 +35,17 @@ const options = {
       }
     ]
   }
-};
-
-export default function Graphs() {
-    return (
+};  
+  
+  return (
       <div className="Graphs">
         <Line data={data} legend={legend} options={options} />
       </div>
     );
   }
+
+  
+
+
+
+
