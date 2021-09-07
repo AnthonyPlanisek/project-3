@@ -18,6 +18,7 @@ import Signup from './pages/Signup';
 import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
 import Graphs from './components/Graphs';
+import CircularProgressbar from './components/progress';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -43,18 +44,19 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-{/*       
+      
     <Router>
     <div className="App">
       <Route exact path="/">
-        <NavBar />
+        {/* <NavBar />
         <LandingPage /> */}
         {/* <TodoForm /> */}
+        <CircularProgressbar value={35}/>
         
         {/* <HeroText /> */}
-        <Graphs />
-        {/* <Home /> */}
-      {/* </Route>
+        {/* <Graphs /> */}
+        <Home />
+      </Route>
       <Route exact path="/signup">
       <NavBar />
         <Signup />
@@ -63,12 +65,12 @@ function App() {
       <NavBar />
         <Productivity />
         {/* <TodoList /> */}
-        {/* <Footer />
-      </Route> */}
-       
-    {/* </div>
+        <Footer />
+      </Route>
+      
+    </div>
    
-    </Router> */}
+    </Router>
    
     </ApolloProvider>
     
