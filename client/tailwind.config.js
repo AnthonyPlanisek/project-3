@@ -19,14 +19,15 @@ module.exports = {
     animation: {
         
         'fade-in-up': 'fade-in-up 3s ease-out',
-       
+        
     },
+    
 
     
     colors: {
       primary: "#B2EBCB",
       secondary: "#2E8B57",
-      dark: "#553F3E"
+      dark: "#000"
     },
     fontFamily: {
       'poppins': ['Poppins'],

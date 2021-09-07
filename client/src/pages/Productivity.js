@@ -12,7 +12,7 @@ const Productivity= () => {
          
           <ProductColumn />
           
-          <ProductColumn />
+         
         </div>
       </main>
     );

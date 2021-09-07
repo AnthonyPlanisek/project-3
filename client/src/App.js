@@ -19,6 +19,7 @@ import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
 import Graphs from './components/Graphs';
 import CircularProgressbar from './components/progress';
+import HeroText2 from './components/HeroText2';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -48,14 +49,15 @@ function App() {
     <Router>
     <div className="App">
       <Route exact path="/">
-        {/* <NavBar />
-        <LandingPage /> */}
+        <NavBar />
+        {/* <LandingPage /> */}
         {/* <TodoForm /> */}
-        <CircularProgressbar value={35}/>
+        {/* <CircularProgressbar value={35}/> */}
         
-        {/* <HeroText /> */}
+        <HeroText />
+       <HeroText2 />
         {/* <Graphs /> */}
-        <Home />
+        {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
       <NavBar />
@@ -64,7 +66,7 @@ function App() {
       <Route exact path="/productivity">
       <NavBar />
         <Productivity />
-        {/* <TodoList /> */}
+       
         <Footer />
       </Route>
       
