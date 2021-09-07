@@ -50,12 +50,11 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
-        {/* <LandingPage /> */}
+        <LandingPage />
         {/* <TodoForm /> */}
         {/* <CircularProgressbar value={35}/> */}
         
         <HeroText />
-       <HeroText2 />
         {/* <Graphs /> */}
         {/* <Home /> */}
       </Route>
