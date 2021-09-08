@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import TodoForm from './TodoForm';
 import {RiCloseCircleLine} from 'react-icons/ri'
 import {TiEdit} from 'react-icons/ti'
-import Example from './modal';
+import Modal from './modal';
 
 function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
     const [edit, setEdit] = useState({
@@ -22,9 +22,10 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
         return <TodoForm edit={edit} onSubmit={submitUpdate} />;
     }
 
-    return todos.map((todo, index) => (
+    return (
+    todos.map((todo, index) => (
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-        <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+        <div key={todo.id} onClick={() => <Modal />}>
             {todo.text}
         </div>
             <div className='icons'>
@@ -37,10 +38,9 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
                 className='edit-icon'
                 />
             </div>
-                {/* <Example /> */}
         </div>
     ))
-}
+)}
 
 
 export default ToDo
