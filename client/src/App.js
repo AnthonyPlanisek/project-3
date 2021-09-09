@@ -50,12 +50,21 @@ function App() {
       <Route exact path="/">
         <NavBar />
         <LandingPage />
+<<<<<<< Updated upstream
         {/* <TodoForm /> */}
         {/* <CircularProgressbar value={35}/> */}
         
         <HeroText />
         {/* <Graphs /> */}
         {/* <Home /> */}
+=======
+        <TodoForm />
+        {/* <CircularProgressbar value={35}/> */}
+        
+        <HeroText />
+        <Graphs />
+        <Home />
+>>>>>>> Stashed changes
       </Route>
       <Route exact path="/signup">
       <NavBar />
@@ -64,7 +73,6 @@ function App() {
       <Route exact path="/productivity">
       <NavBar />
         <Productivity />
-        {/* <TodoList /> */}
         <Footer />
       </Route>
       

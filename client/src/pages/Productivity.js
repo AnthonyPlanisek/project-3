@@ -6,13 +6,14 @@ const Productivity= () => {
     
     return (
       <main>
-        <div className="grid grid-cols-4">
+        {/* className="grid grid-cols-4" */}
+        <div >
           
           <ProductColumn />
          
-          <ProductColumn />
+          {/* <ProductColumn />
           
-          <ProductColumn />
+          <ProductColumn /> */}
         </div>
       </main>
     );
