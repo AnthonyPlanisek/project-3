@@ -50,10 +50,11 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
-        {/* <LandingPage /> */}
-        {/* <TodoForm />         */}
-        {/* <HeroText /> */}
-        {/* <Graphs /> */}
+        <TodoForm />
+        {/* <CircularProgressbar value={35}/> */}
+        
+        <HeroText />
+        <Graphs />
         <Home />
       </Route>
       <Route exact path="/signup">
@@ -63,7 +64,6 @@ function App() {
       <Route exact path="/productivity">
       <NavBar />
         <Productivity />
-        {/* <TodoList /> */}
         <Footer />
       </Route>
     </div>
