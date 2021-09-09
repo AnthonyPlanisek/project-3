@@ -18,14 +18,24 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
         })
     }
 
+    const isOpen = value => {
+        isOpen(value);
+        isOpen({ 
+            value: false
+        })
+    }
+
     if (edit.id) {
         return <TodoForm edit={edit} onSubmit={submitUpdate} />;
     }
 
     return (
-    todos.map((todo, index) => (
+        <>
+    {todos.map((todo, index) => (
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-        <div key={todo.id} onClick={() => <Modal />}>
+        <div key={todo.id} onClick={(isOpen) => {
+            console.log('click')
+        }}>
             {todo.text}
         </div>
             <div className='icons'>
@@ -39,7 +49,9 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
                 />
             </div>
         </div>
-    ))
+    ))}
+    <Modal />
+    </>
 )}
 
 
