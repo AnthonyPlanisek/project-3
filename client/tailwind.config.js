@@ -16,9 +16,13 @@ module.exports = {
             },
         },
     },
+      zIndex: {
+       '-100': '-100',
+      },
+  
     animation: {
         
-        'fade-in-up': 'fade-in-up 3s ease-out',
+        'fade-in-up': 'fade-in-up 2s ease-out forwards',
         
     },
     
@@ -34,7 +38,7 @@ module.exports = {
     },
     extend: {
     backgroundImage: theme => ({
-      'nvbg': "url('./navpattern.svg')"
+      'nvbg': "url('./src/assets/images/navpattern.svg')"
     })
     }}
   },
