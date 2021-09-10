@@ -19,3 +19,9 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_TASKS = gql`
+  query Task {
+          taskPoint
+          
+  }`

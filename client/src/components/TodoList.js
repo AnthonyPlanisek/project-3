@@ -3,7 +3,8 @@ import TodoForm from './TodoForm';
 import Todo from './Todo';
 
 function TodoList() {
-    const [todos, setTodos] = useState([])
+    const localTodos = JSON.parse(localStorage.getItem('todos'));
+    const [todos, setTodos] = useState(localTodos);
 
     const addTodo = todo => {
         if(!todo.text || /^\s*$/.test(todo.text)) {
@@ -13,7 +14,9 @@ function TodoList() {
         const newTodos = [todo, ...todos]
 
         setTodos(newTodos)
-       
+        
+        localStorage.setItem("todos", JSON.stringify(newTodos));
+        
     };
 
     const updateTodo = (todoId, newValue) => {
@@ -31,20 +34,25 @@ function TodoList() {
         setTodos(removeArr);
     };
 
-    const completeTodo = id => {
-        let updatedTodos = todos.map(todo => {
-            if (todo.id === id) {
-                todo.isComplete = !todo.isComplete;
-            }
-            return todo;
-        });
-        setTodos(updatedTodos);
+    const [completeToggle, setCompleteToggle] = useState();
+    
+    const toggleComplete = todoId => {
+      const newTodos = todos.map(todo => {
+          if (todo.id === todoId) {
+              todo.complete = true
+          }
+
+          return todo
+      })
+
+        setTodos(newTodos)
     }
+    console.log('todos ', todos)
 
     return (
         <div>
             <TodoForm onSubmit={addTodo} />
-            <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+            <Todo todos={todos} toggleComplete={toggleComplete} completeToggle={completeToggle} removeTodo={removeTodo} updateTodo={updateTodo} setTodos = {setTodos}/>
         </div>
     )
 }

@@ -1,9 +1,14 @@
 import React, {useState} from 'react';
 import TodoForm from './TodoForm';
-import {RiCloseCircleLine} from 'react-icons/ri'
-import {TiEdit} from 'react-icons/ti'
+import { RiCloseCircleLine} from 'react-icons/ri'
+import {TiEdit, TiWeatherNight} from 'react-icons/ti'
+import Modal from './modal';
+import {RiCheckboxCircleLine} from 'react-icons/ri'
 
-function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
+function ToDo({ todos, toggleComplete, completeToggle, removeTodo, updateTodo, setTodos }) {
+    const [showModal, setShowModal] = React.useState(false);
+    const [text, setText] = React.useState("");
+
     const [edit, setEdit] = useState({
         id: null,
         value: ''
@@ -17,27 +22,54 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
         })
     }
 
+    const isOpen = value => {
+        isOpen(value);
+        isOpen({ 
+            value: false
+        })
+    }
+
     if (edit.id) {
         return <TodoForm edit={edit} onSubmit={submitUpdate} />;
     }
 
-    return todos.map((todo, index) => (
-        <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-            <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-                {todo.text}
+    return (
+        <>
+        {todos.map((todo, index) => (
+                <>
+            <div className={todo.complete ? 'todo-row complete' : 'todo-row'} key={index} >
+                <div onClick={(e) => {setShowModal(true); setText(todo.text)}}>
+                    {todo.text}
+                </div>
+                <div className='icons'>
+                    <RiCloseCircleLine
+                    onClick={() => removeTodo(todo.id)}
+                    className='delete-icon'
+                    />
+                    <TiEdit 
+                    onClick={() => setEdit({ id:todo.id, value: todo.text })}
+                    className='edit-icon'
+                    />
+                    <RiCheckboxCircleLine
+                        onClick={() => toggleComplete(todo.id)} 
+                        className='complete-icon'
+                        />
+                </div>
             </div>
-            <div classname='icons'>
-                <RiCloseCircleLine
-                onClick={() => removeTodo(todo.id)}
-                className='delete-icon'
-                />
-                <TiEdit 
-                onClick={() => setEdit({ id:todo.id, value: todo.text })}
-                className='edit-icon'
-                />
-            </div>
-        </div>
-    ))
-}
+            <Modal
+                showModal = {showModal}
+                setShowModal = {setShowModal}
+                text = {text}
+                setTodos = {setTodos}
+                todos = {todos}
+                todo={todo}
+            />
+            </>
+        ))
+    }
+    </>
+    )}
+    
+
 
 export default ToDo

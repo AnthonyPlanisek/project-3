@@ -3,9 +3,9 @@ import ToDoList from "./TodoList"
 
 export default function ProductColumn() {
   return (
-    <div className="mr-8 ml-8 bg-primary" >
+    <div className="mr-8 ml-8 rounded" >
    
-    <div>
+    <div className="container">
       
      <ToDoList />
     </div>
