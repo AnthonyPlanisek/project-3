@@ -71,11 +71,11 @@ function App() {
       <NavBar />
         <Productivity />
         <Graphs />
-        <Footer />
+       
       </Route>
       <Switch>
           <Route path="/">
-            <Home />
+            
           </Route>
           <Route path="/productivity">
             <Productivity />
