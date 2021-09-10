@@ -2,32 +2,37 @@
     {
         "username": "test",
         "email": "test@gmail.com",
-        "password": "password01"
+        "password": "password01",
+        "points": 2
     },
     {
         "username": "Anthony",
         "email": "anthony@gmail.com",
         "password": "password",
-        "points": 10
+        "points": 12
     },
     {
         "username": "Thomas",
         "email": "thomas@gmail.com",
-        "password": "password"
+        "password": "password",
+        "points": 4
     },
     {
         "username": "Luke",
         "email": "luke@gmail.com",
-        "password": "password"
+        "password": "password",
+        "points": 6
     },
     {
         "username": "Burke",
         "email": "burke@gmail.com",
-        "password": "password"
+        "password": "password",
+        "points": 8
     },
     {
         "username": "Emmett",
         "email": "emmett@gmail.com",
-        "password": "password"
+        "password": "password",
+        "points": 10
     }
 ]

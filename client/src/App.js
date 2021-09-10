@@ -53,8 +53,8 @@ function App() {
         {/* <TodoForm /> */}
         {/* <CircularProgressbar value={35}/> */}
         
-        <HeroText />
-        {/* <Graphs /> */}
+        {/* <HeroText /> */}
+        <Graphs />
         {/* <Home /> */}
       </Route>
       <Route exact path="/signup">
