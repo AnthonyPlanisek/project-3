@@ -25,6 +25,9 @@ const handleSubmit = e => {
 
     setInput('');
 }
+
+
+
     return (
        <form className="todo-form" onSubmit={handleSubmit}>
            {props.edit ? ( 
@@ -47,7 +50,7 @@ const handleSubmit = e => {
             placeholder="Enter upcoming tasks..." 
             value={input} 
             name="text" 
-            className="todo-input m-3 rounded text-white align-center"
+            className="todo-input m-3 rounded text-black align-center"
             onChange={handleChange}
             ref={inputRef}
             />
