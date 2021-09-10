@@ -34,7 +34,9 @@
   }
   
   .todo-form {
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
+    margin: 4px auto;
+    width: 92%;
   }
   
   .todo-input {
@@ -42,11 +44,10 @@
     border: 2px solid #000000;
     outline: none;
     background: transparent;
-    color: #fff;
   }
   
   .todo-input::placeholder {
-    color: #0e0d0d;
+    color: primary;
   }
 /*   
   .todo-button {
@@ -118,7 +119,7 @@
   }
 
   ::placeholder {
-    color: white !important;
+    color: primary !important;
     opacity: 10;
   }
 

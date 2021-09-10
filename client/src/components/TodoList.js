@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
 
@@ -13,7 +13,9 @@ function TodoList() {
         const newTodos = [todo, ...todos]
 
         setTodos(newTodos)
-       
+        
+        localStorage.setItem("todos", JSON.stringify(newTodos));
+        
     };
 
     const updateTodo = (todoId, newValue) => {
@@ -55,6 +57,12 @@ function TodoList() {
         setTodos(newTodos)
     }
     console.log('todos ', todos)
+
+    // useEffect(() => {
+    //     localStorage.setItem("todos", JSON.stringify(todos));
+    //     console.log('!!')
+    // }, [todos]);
+    
 
     return (
         <div>
