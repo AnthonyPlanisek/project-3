@@ -36,8 +36,8 @@
     "react-chartjs-2": "^3.0.4",
     "react-icons": "^4.2.0",
     "react-transition-group": "^4.4.2",
-    "reactstrap": "^8.10.0"
-    "concurrently": "^5.1.0"
+    "reactstrap": "^8.10.0",
+    "concurrently": "^5.1.0",
     "eslint": "^7.32.0"
-  },
+  }
 }
