@@ -19,11 +19,15 @@ const handleSubmit = e => {
 
     props.onSubmit({
         id: Math.floor(Math.random() * 10000),
-        text: input
+        text: input,
+        complete: false
     })
 
     setInput('');
 }
+
+
+
     return (
        <form className="todo-form" onSubmit={handleSubmit}>
            {props.edit ? ( 
@@ -33,24 +37,24 @@ const handleSubmit = e => {
            placeholder="Update your task" 
            value={input} 
            name="text" 
-           className="todo-input edit"
+           className="todo-input m-3 rounded edit text-black"
            onChange={handleChange}
            ref={inputRef}
            />
-           <button className="todo-button edit">Update</button>
+           <button className="todo-button edit bg-tertiary hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3">Update</button>
            </>
            ) : ( 
            <>
            <input 
             type="text" 
-            placeholder="Add a todo" 
+            placeholder="Enter upcoming tasks..." 
             value={input} 
             name="text" 
-            className="todo-input"
+            className="todo-input m-3 rounded text-black align-center"
             onChange={handleChange}
             ref={inputRef}
             />
-            <button className="todo-button bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"> Add todo</button>
+            <button className="todo-button bg-tertiary hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3"> plant seed</button>
             </>
             )
         }

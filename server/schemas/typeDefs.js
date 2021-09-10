@@ -21,10 +21,24 @@ const typeDefs = gql`
         me: User
   }
 
+   
   type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
   }
+
+  type Task {
+        taskName: String
+        taskPoint: Number
+        taskDescription: String
+        taskDate: Date
+    }
+    type Query {
+        tasks: [Task]
+        task(taskPoint: Number!): task
+        
+    }
+
 `;
 
 module.exports = typeDefs;
