@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import './App.css'
 import {
   ApolloClient,
@@ -7,7 +14,6 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage'
 import NavBar from './components/NavBar';
 import TodoForm from './components/TodoForm';
@@ -50,29 +56,48 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
-        <TodoForm />
+        <Graphs />
+        {/* <TodoForm /> */}
         {/* <CircularProgressbar value={35}/> */}
         
         <HeroText />
-        <Graphs />
         <Home />
       </Route>
+      
       <Route exact path="/signup">
       <NavBar />
         <Signup />
       </Route>
+
       <Route exact path="/productivity">
       <NavBar />
         <Productivity />
+        <Graphs />
         <Footer />
       </Route>
+      <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/productivity">
+            <Productivity />
+          </Route>
+          <Route path="/signup">
+            <Signup />
+          </Route>
+        </Switch>
     </div>
-   
+
+    
     </Router>
    
     </ApolloProvider>
+
+    
     
   );
 }
+
+
 
 export default App;
