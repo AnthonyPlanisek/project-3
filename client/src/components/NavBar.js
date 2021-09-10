@@ -1,12 +1,12 @@
 import React from "react";
 import plantrlogo from '../assets/images/plantrlogo.svg';
-
+import mySvg from '../assets/images/navpattern.svg';
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className=" sticky top-0 z-50 flex flex-wrap w-auto items-center justify-between px-2 py-3 bg-nvbg  bg-white mb-3" >
+      <nav className=" sticky top-0 z-50 flex flex-wrap w-auto items-center justify-between px-2 py-3 bg-nvbg  bg- mb-3" style={{ backgroundImage: `url(${mySvg})` }} >
        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
