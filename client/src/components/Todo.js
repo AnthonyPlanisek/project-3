@@ -27,7 +27,6 @@ function ToDo({ todos, toggleComplete, completeToggle, removeTodo, updateTodo })
         <div className={todo.complete ? 'todo-row complete' : 'todo-row'} key={index}>
             <div>
                 {todo.text}
-                {/* {localStorage.getItem('todos')} */}
             </div>
             <div className='icons'>
                 <RiCloseCircleLine

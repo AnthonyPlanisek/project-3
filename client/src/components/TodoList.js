@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
 
 function TodoList() {
-    const [todos, setTodos] = useState([])
+    const localTodos = JSON.parse(localStorage.getItem('todos'));
+    const [todos, setTodos] = useState(localTodos);
 
     const addTodo = todo => {
         if(!todo.text || /^\s*$/.test(todo.text)) {
@@ -33,16 +34,6 @@ function TodoList() {
         setTodos(removeArr);
     };
 
-    // const completeTodo = id => {
-    //     let updatedTodos = todos.map(todo => {
-    //         if (todo.id === id) {
-    //             todo.isComplete = !todo.isComplete;
-    //         }
-    //         return todo;
-    //     });
-    //     setTodos(updatedTodos);
-    // }
-
     const [completeToggle, setCompleteToggle] = useState();
     
     const toggleComplete = todoId => {
@@ -57,12 +48,6 @@ function TodoList() {
         setTodos(newTodos)
     }
     console.log('todos ', todos)
-
-    // useEffect(() => {
-    //     localStorage.setItem("todos", JSON.stringify(todos));
-    //     console.log('!!')
-    // }, [todos]);
-    
 
     return (
         <div>
