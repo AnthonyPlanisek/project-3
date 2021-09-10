@@ -58,8 +58,8 @@ function App() {
         <NavBar />
         <LandingPage />        
         <HeroText />
-        <Graphs />     
-        <Home />
+        
+        
       </Route>
       
       <Route exact path="/signup">
@@ -71,11 +71,11 @@ function App() {
       <NavBar />
         <Productivity />
         <Graphs />
-        <Footer />
+       
       </Route>
       <Switch>
           <Route path="/">
-            <Home />
+            
           </Route>
           <Route path="/productivity">
             <Productivity />

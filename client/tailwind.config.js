@@ -4,6 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      
       keyframes: {
         'fade-in-up': {
             '0%': {
@@ -16,25 +17,32 @@ module.exports = {
             },
         },
     },
+      zIndex: {
+       '-100': '-100',
+      },
+  
     animation: {
         
-        'fade-in-up': 'fade-in-up 3s ease-out',
-       
+        'fade-in-up': 'fade-in-up 2s ease-out forwards',
+        
     },
+    
 
     
     colors: {
       primary: "#B2EBCB",
       secondary: "#2E8B57",
+      dark: "#000",
       tertiary: "rgb(129, 189, 129)",
-      dark: "#553F3E"
+      
+    
     },
     fontFamily: {
       'poppins': ['Poppins'],
     },
     extend: {
     backgroundImage: theme => ({
-      'nvbg': "url('./navpattern.svg')"
+      'nvbg': "url('./src/assets/images/navpattern.svg')"
     })
     }}
   },
