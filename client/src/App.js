@@ -24,7 +24,8 @@ import Signup from './pages/Signup';
 import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
 import Graphs from './components/Graphs';
-import CircularProgressbar from './components/progress';
+import Example from './components/modal';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -55,6 +56,7 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NavBar />
+        <Graphs />
         {/* <TodoForm /> */}
         {/* <CircularProgressbar value={35}/> */}
         
@@ -83,7 +85,7 @@ function App() {
           <Route path="/signup">
             <Signup />
           </Route>
-        </Switch>   
+        </Switch>
     </div>
 
     
