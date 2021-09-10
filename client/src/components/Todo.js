@@ -37,8 +37,8 @@ function ToDo({ todos, toggleComplete, completeToggle, removeTodo, updateTodo, s
         <>
         {todos.map((todo, index) => (
                 <>
-            <div className={todo.complete ? 'todo-row complete' : 'todo-row'} key={index} onClick={(e) => {setShowModal(true); setText(todo.text)}}>
-                <div>
+            <div className={todo.complete ? 'todo-row complete' : 'todo-row'} key={index} >
+                <div onClick={(e) => {setShowModal(true); setText(todo.text)}}>
                     {todo.text}
                 </div>
                 <div className='icons'>
