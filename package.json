@@ -17,6 +17,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "graphql": "^15.5.3"
+    "graphql": "^15.5.3",
+    "react-intersection-observer": "^8.32.1"
   }
 }
