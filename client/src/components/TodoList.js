@@ -52,7 +52,7 @@ function TodoList() {
     return (
         <div>
             <TodoForm onSubmit={addTodo} />
-            <Todo todos={todos} toggleComplete={toggleComplete} completeToggle={completeToggle} removeTodo={removeTodo} updateTodo={updateTodo} />
+            <Todo todos={todos} toggleComplete={toggleComplete} completeToggle={completeToggle} removeTodo={removeTodo} updateTodo={updateTodo} setTodos = {setTodos}/>
         </div>
     )
 }

@@ -24,7 +24,8 @@ import Signup from './pages/Signup';
 import Productivity from './pages/Productivity';
 import Footer from './components/Footer';
 import Graphs from './components/Graphs';
-import CircularProgressbar from './components/progress';
+import Example from './components/modal';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -57,8 +58,7 @@ function App() {
         <NavBar />
         <LandingPage />        
         <HeroText />
-        <Graphs />      
-        <HeroText />
+        <Graphs />     
         <Home />
       </Route>
       
@@ -83,7 +83,7 @@ function App() {
           <Route path="/signup">
             <Signup />
           </Route>
-        </Switch>   
+        </Switch>
     </div>
 
     

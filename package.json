@@ -13,9 +13,31 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "autoprefixer": "^9.8.6",
+    "concurrently": "^5.1.0",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.8"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyPlanisek/project-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnthonyPlanisek/project-3/issues"
+  },
+  "homepage": "https://github.com/AnthonyPlanisek/project-3#readme",
   "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "bootstrap": "^5.1.0",
+    "chart.js": "^3.5.1",
+    "icons": "^1.0.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-chartjs-2": "^3.0.4",
+    "react-icons": "^4.2.0",
+    "react-transition-group": "^4.4.2",
+    "reactstrap": "^8.10.0"
+    "concurrently": "^5.1.0"
     "eslint": "^7.32.0"
-  }
+  },
 }
