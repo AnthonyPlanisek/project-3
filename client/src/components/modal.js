@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 export default function Modal(props) {
-  console.log('PROPS ', props)
   const [todoDesc, setTodoDesc] = useState(props.todo.description || '')
 
   useEffect(() => {
