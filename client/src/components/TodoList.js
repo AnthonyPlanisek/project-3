@@ -4,8 +4,7 @@ import Todo from './Todo';
 
 function TodoList() {
     const localTodos = JSON.parse(localStorage.getItem('todos'));
-    const [todos, setTodos] = useState(localTodos);
-
+    const [todos, setTodos] = useState(localTodos || []);
     const addTodo = todo => {
         if(!todo.text || /^\s*$/.test(todo.text)) {
             return

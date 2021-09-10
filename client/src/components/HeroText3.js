@@ -15,7 +15,7 @@ export default function Component() {
    
     <div>
      <p ref={ref} className={`w-1/2 px-8 absolute leading-relaxed tracking-widest left-40 
-        text-dark  text-5xl font-bold font-poppins h-40 opacity-0${inView ? " animate-fade-in-up": ""}`}>For every weekly milestone, we plant a tree in your name.</p>
+        text-dark  text-5xl font-bold font-poppins h-40 opacity-0${inView ? " animate-fade-in-up": ""}`}>Keep track of all of your goals.</p>
     </div>
   </div>
    

@@ -58,8 +58,8 @@ function App() {
         <NavBar />
         <LandingPage />        
         <HeroText />
-        <Graphs />     
-        <Home />
+        
+        
       </Route>
       
       <Route exact path="/signup">
