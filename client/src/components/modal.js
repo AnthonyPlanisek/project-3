@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Modal(props) {
-  const [todoDesc, setTodoDesc] = useState('')
+  console.log('PROPS ', props)
+  const [todoDesc, setTodoDesc] = useState(props.todo.description || '')
+
+  useEffect(() => {
+    setTodoDesc(props.todo.description || '')
+  }, [props.todo])
+  
   return (
     <>
       {props.showModal ? (
@@ -15,7 +21,7 @@ export default function Modal(props) {
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                   <h3 className="text-3xl font-semibold">
-                     {props.text}
+                     {props.todo.text}
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -28,8 +34,7 @@ export default function Modal(props) {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto text-black">
-                  <textarea onChange={e => setTodoDesc(e.target.value)} className="my-3 text-black-500 text-lg leading-relaxed" placeholder={"Description..."}>
-                  </textarea>
+                  <textarea value={todoDesc} onChange={e => setTodoDesc(e.target.value)} className="my-3 text-black-500 text-lg leading-relaxed" placeholder={"Description..."} />
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
@@ -44,10 +49,16 @@ export default function Modal(props) {
                     className="bg-emerald-500 text-black active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => {
-                      const currentTodo = props.todo;
-                      currentTodo.description = todoDesc
+                      const newTodos = props.todos.map(t => {
+                        if (t.id === props.todo.id) {
+                          t.description = todoDesc
+                        }
+                        
+                        return t
+                      })
+                      console.log('newTodos:', newTodos)
+                      props.setTodos(newTodos)
                       props.setShowModal(false);
-                      //  props.setTodos([...props.todos.filter(x => x.id === odo.id), currentTodo])
                       }}
                   >
                     Save Changes

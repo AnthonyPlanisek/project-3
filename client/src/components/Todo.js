@@ -5,9 +5,9 @@ import {TiEdit, TiWeatherNight} from 'react-icons/ti'
 import Modal from './modal';
 import {RiCheckboxCircleLine} from 'react-icons/ri'
 
-function ToDo({ todos, toggleComplete, completeToggle, removeTodo, updateTodo, setTodos }) {
+function ToDo({ todos, toggleComplete, removeTodo, updateTodo, setTodos }) {
     const [showModal, setShowModal] = React.useState(false);
-    const [text, setText] = React.useState("");
+    const [selectedTodo, setSelectedTodo] = React.useState("");
 
     const [edit, setEdit] = useState({
         id: null,
@@ -36,9 +36,12 @@ function ToDo({ todos, toggleComplete, completeToggle, removeTodo, updateTodo, s
     return (
         <>
         {todos.map((todo, index) => (
-                <>
-            <div className={todo.complete ? 'todo-row complete' : 'todo-row'} key={index} >
-                <div onClick={(e) => {setShowModal(true); setText(todo.text)}}>
+                <div key={todo.id}>
+            <div className={todo.complete ? 'todo-row complete' : 'todo-row'} key={index} onClick={(e) => {
+                setShowModal(true);
+                setSelectedTodo(todo)
+            }}>
+                <div>
                     {todo.text}
                 </div>
                 <div className='icons'>
@@ -56,17 +59,16 @@ function ToDo({ todos, toggleComplete, completeToggle, removeTodo, updateTodo, s
                         />
                 </div>
             </div>
-            <Modal
-                showModal = {showModal}
-                setShowModal = {setShowModal}
-                text = {text}
-                setTodos = {setTodos}
-                todos = {todos}
-                todo={todo}
-            />
-            </>
+            </div>
         ))
     }
+    <Modal
+                showModal = {showModal}
+                setShowModal = {setShowModal}
+                setTodos = {setTodos}
+                todos = {todos}
+                todo={selectedTodo}
+            />
     </>
     )}
     
