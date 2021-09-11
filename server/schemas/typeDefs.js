@@ -6,6 +6,7 @@ const typeDefs = gql`
         _id: ID 
         username: String
         email: String
+        points: Int
         password: String
     }
 
@@ -25,18 +26,6 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
   }
-
-  type Task {
-        taskName: String
-        taskPoint: Number
-        taskDescription: String
-        taskDate: Date
-    }
-    type Query {
-        tasks: [Task]
-        task(taskPoint: Number!): task
-        
-    }
 
 `;
 

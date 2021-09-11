@@ -1,6 +1,5 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-// import UserList from '../components/UserList';
 import { QUERY_USERS } from '../utils/queries';
 
 const Home = () => {
