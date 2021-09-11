@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# MySQL Manatees
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Anthony Planisek
 
-## Available Scripts
+### Luke Spang
 
-In the project directory, you can run:
+### Thomas Maxey
 
-### `npm start`
+### Emmett Rushin
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Burke Beatty
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Application
+https://productivityappunc.herokuapp.com/
+<br>
 
-### `npm run build`
+    
+## Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is a productivity app that's aimed at not only helping you keep on track with your daily, weekly, and monthly tasks, but it is also an app designed to help plant trees in order to counteract the devastating damages done by global warming. We used MERN stack to sew this application together. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+This project/application is covered under the MIT license.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Table of Contents
 
-## Learn More
+* [Install](#Install)
+* [Usage](#Usage)
+* [Features](#Features)
+* [Contribute](#Contribute)
+* [Questions](#Questions)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
+    
 
-### Code Splitting
+## Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Clone the GitHub repository
+- Update the heroku route (if being run on local host)
+- Add `.env` file with mongoDB info
+- npm i dependencies (if being run on local host)
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+This is a productivity application. Earn points as you complete tasks whether it is day to day or month to month. 
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Home Screen
+The home screen has a transitional background with a nav bar featuring login, logout, and register buttons. All are dependent on the status of the user at that time. We also have the game modes featured in the middle of the screen. At this time we only have United States Cities, but we an easily expand to new modes soon. The search bar will also be implemented in the future to find friends. 
+<br>
+<img src="./client/public/pics/HomeScreen.png">
+<br>
 
-### Advanced Configuration
+## Account Creation
+<br>
+The registration/account creation screen allows new users to create accounts in order to apply themselves to complete tasks on their own accord. This allows them to currently keep track of high score. In the future we want to incorporate a custom avatar/image for users to use for their account. 
+<br>
+<img src="./client/public/pics/AccountCreation.png">
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Task Page
+<br>
+The task page is designed to help you create custom tasks to help you keep track of your day to day lives. You will be presented with a task manager that you can add details, if needed, to whichever task you need to complete.
+<br>
+<img src="./client/public/pics/TaskManager.png">
+<br>
 
-### Deployment
+## Features
+<br>
+Some special features included in our productivity app include the the custom task manager where you can provide tasks along with any details you may want to include to help you stay on track. There is also a scoring system along with said tasks so you can see how you compare to other friends using the application. There is also a chart that helps you keep track of how you're doing compared to your friends!
+<br>
+<img src="./client/public/pics/graphs.png">
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contribute
 
-### `npm run build` fails to minify
+Feel free to reach about ways that you can contribute to this game code, or extra features you would like to see added in the future. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<br>
+
+## Questions
+
+If there are any questions regarding the repo, or any technical issues, please feel free to contact us at: MySQLManatees@gmail.com 
