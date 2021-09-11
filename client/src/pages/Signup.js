@@ -39,10 +39,10 @@ const Signup = () => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
+    <main className="w-auto shadow-md m-10 bg-primary rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+      <div className="col-6 col-lg-6">
+        <div className="card ">
+          <h4 className=" font-poppins font-black  text-light p-2">Sign Up</h4>
           <div className="card-body">
             {data ? (
               <p>
@@ -52,7 +52,7 @@ const Signup = () => {
             ) : (
               <form onSubmit={handleFormSubmit}>
                 <input
-                  className="form-input"
+                  className="form-input m-2 shadow-lg border-2"
                   placeholder="Your username"
                   name="username"
                   type="text"
@@ -60,7 +60,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <input
-                  className="form-input"
+                  className="form-input m-2 shadow-lg border-2"
                   placeholder="Your email"
                   name="email"
                   type="email"
@@ -68,7 +68,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <input
-                  className="form-input"
+                  className="form-input m-2 outline-none shadow-lg border-2"
                   placeholder="******"
                   name="password"
                   type="password"
@@ -76,7 +76,8 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <button
-                  className="btn btn-block btn-primary"
+                  className="btn btn-block btn-primary .shadow-2xl
+                  rounded-md p-1 m-2 bg-secondary"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
