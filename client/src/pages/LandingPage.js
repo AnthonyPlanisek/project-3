@@ -16,6 +16,7 @@ const Productivity= () => {
        <HeroText2 />
           <HeroText3 />
        <HeroText4 />
+      
       </main>
     );
   };

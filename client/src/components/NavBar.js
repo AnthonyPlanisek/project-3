@@ -1,6 +1,7 @@
 import React from "react";
 import plantrlogo from '../assets/images/plantrlogo.svg';
 import mySvg from '../assets/images/navpattern.svg';
+import tripic from '../assets/images/backgroundTri.svg';
 
 
 
@@ -18,11 +19,12 @@ export default function Navbar({ fixed }) {
             <img className="img-responsive w-60  mt-2" src={plantrlogo} alt="logo"/>
             </a>
             <button
-              className="fa-f text-black cursor-pointer mt-2 shadow-md text-xl leading-none px-4 w-10 h-10 py-1  bg-white border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className=" text-black cursor-pointer  shadow-md  leading-none h-2  mt-4 border-secondary  bg-white rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className="fas fa-bars"></i>
+              <img className="w-10 h-10 border-2 border-secondary rounded"  src={tripic} alt="logo"/>
+             
             </button>
           </div>
           <div
